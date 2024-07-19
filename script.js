@@ -3,8 +3,12 @@ const socialLinks =document.querySelector('.social-links');
 socialLinks.style.display = 'none';
 
 
+const profileInfo = document.querySelector('.profile-info');
 const shareButton =  document.querySelector('#profile-share');
 const socialShareButton =  document.querySelector('#social-share');
+
+
+
 
 shareButton.addEventListener('click',()=>{
     if(window.innerWidth < 1440 ) {
@@ -27,6 +31,7 @@ shareButton.addEventListener('click',()=>{
     }
 
 })
+  
 
 socialShareButton.addEventListener('click',()=>{
      if(window.innerWidth < 1440) {
