@@ -281,7 +281,7 @@ main {
     }
      
     .social-links a {
-      visibility: collapse;
+      display: none;
 
     }
   
