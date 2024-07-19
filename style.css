@@ -64,7 +64,7 @@ h6 {
 body {
     font-size: 13px;
     font-family: var(--Manrope);
-    background-color: var(--Grayish-Blue);
+    background-color: var(--Light-Grayish-Blue);
     color: var(--Desaturated-Dark-Blue);
   
     display: flex;
@@ -74,7 +74,7 @@ body {
 }
 
 main {
-  background-color: var(--Light-Grayish-Blue);
+  background-color: white;
 
   /*positioning */
   margin: 4rem auto;
@@ -283,8 +283,6 @@ main {
       visibility: collapse;
 
     }
-   
-
-
+  
 }
 
