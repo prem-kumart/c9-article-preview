@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+
+    /* Primary Colors */
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+
+    /*fonts */
+    --Manrope : "Manrope", sans-serif;
+
+    /*font weights */
+    --fw-Medium : 500;
+    --fw-Bold : 700;
+
+}
+
+
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+* {
+   margin: 0;
+}
+
+html,body {
+  height: 100vh;
+}
+
+/* Media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+/* Typography reset */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+body {
+    font-size: 13px;
+    font-family: var(--Manrope);
+    background-color: var(--Grayish-Blue);
+    color: var(--Desaturated-Dark-Blue);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+  background-color: var(--Light-Grayish-Blue);
+
+  /*positioning */
+  margin: 4rem auto;
+ 
+
+  /* styling */
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20.5rem;
+
+  gap: 1rem;
+ 
+}
+
+
+#hero-image {
+  border-radius: 0.75rem 0.75rem 0 0;
+  height: 100%;
+}
+
+
+/* content block */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+
+/* service description styling */
+.service-description {
+   display: flex;
+   flex-direction: column;
+
+   gap: 0.75rem;
+
+   margin-left: 2rem;
+   margin-right: 2rem;
+}
+
+.service-description h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+
+  font-weight: var(--fw-Bold);
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.service-description p {
+  letter-spacing: 0.12px;
+  line-height: 1.25rem;
+}
+
+
+
+/* profile styling */
+.profile-info {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem 1.25rem 2rem;
+}
+
+
+/* .profile {
+  
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+} */
+
+#profile-photo {
+   
+    max-width: 2.5rem;
+    border-radius: 100%;
+    
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+}
+
+
+.profile-info .name {
+    font-weight: var(--fw-Bold);
+    color: var(--Very-Dark-Grayish-Blue);
+
+}
+
+.profile-info a, .social-links a{
+
+     margin-left: 15%;
+     width: 2rem;
+     height: 2rem;
+     border-radius: 100%;
+     background-color:  hsl(217, 19%, 35%,0.1);
+     
+}
+
+.share {
+  margin: 9px auto;
+  width: 1rem;
+  opacity: 100%;
+
+}
+
+.social-links {
+   background-color: var(--Very-Dark-Grayish-Blue);
+   display: flex;
+   border-radius: 0  0 0.75rem 0.75rem;
+   justify-content: space-between;
+   padding: 1rem 2rem 1rem 2rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+  
+}
+
+.socials p {
+  letter-spacing: 5px;
+}
+
+.socials img{
+  height: 1.25rem;
+  width: 1.25rem;
+
+}
+
+.white-filter {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.social-links a {
+ background-color:  hsl(212, 23%, 69%);
+}
+
+
+
+@media only screen  and (min-width: 1440px) {
+  main {
+     flex-direction: row;
+     max-width: 45.625rem;
+     gap: 0;
+  }
+
+
+  #hero-image {
+    border-radius: 0.75rem 0 0 0.75rem;
+    max-width: 17.8rem;
+  }
+
+  .main-content{
+    max-width: 365px;
+    margin: 2rem 2.5rem 2rem 2.5rem;
+  }
+  
+  .service-description {
+    margin: 0;
+  }
+
+
+.service-description h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.25px;
+
+  font-weight: var(--fw-Bold);
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+
+  .profile-info {
+    padding: 0;
+  }
+
+
+  .profile-info a{
+
+    margin-left: 30%;
+  }
+    /* social-links */
+    .social-links {
+    
+      position: relative;
+      max-width: 15.5rem;
+      border-radius: 0.75rem;
+    }
+    
+    .social-links::after {
+       content: "";
+       height: 0;
+       width:0;
+       position: absolute;
+       top: 100%;
+       left:7.5rem;
+       border-left: 0.75rem solid transparent;
+       border-top: 0.75rem solid  var(--Very-Dark-Grayish-Blue);
+       border-right: 0.75rem solid transparent;
+    }
+     
+    .social-links a {
+      visibility: collapse;
+
+    }
+   
+
+
+}
+
